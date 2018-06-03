@@ -13,7 +13,7 @@ import Privacy from './components/Course/Privacy'
 
 export default () => {
   return (
-     <Router history={history}>
+     <Router history={history} basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path='/' component={App}/>
         <Route path='/course/privacy' component={Privacy}/>
