@@ -1,0 +1,30 @@
+{
+  "course": {
+    "c-pr": {
+      "title": "Jouw privacy",
+      "introduction": "Als we het over privacy hebben, bedoelen we vaak twee dingen, dat we alleen kunnen zijn met anderen, of dat we er zeker van kunnen zijn dat anderen geen toegang hebben tot onze informatie. Het wel of niet hebben van privacy geeft aan in welke mate mensen de toegang tot hun eigen gegevens kunnen controleren.",
+      "sources": {
+        "Nederlandse Grondwet - Artikel 10: Privacy": "https://www.denederlandsegrondwet.nl/id/via0icz1lvv8/artikel_10_privacy"
+      },
+      "questions": {
+        "q-01": {
+          "question": "Dit is een vraag",
+          "answers": {
+            "a-01": {
+              "answer": "Antwoord 1",
+              "correct": false
+            },
+            "a-02": {
+              "answer": "Antwoord 2",
+              "correct": true
+            },
+            "a-03": {
+              "answer": "Antwoord 3",
+              "correct": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,15 +3,15 @@ export interface IState {
 }
 
 const initialState: IState = {
-  username: undefined
+  username: ''
 }
 
-export const reducer = (state: IState = initialState, action: any) => {
+export const reducer = (state: IState = initialState, action: any): IState => {
   switch (action.type) {
     case 'CREATE_SESSION':
       return {
         ...state,
-        username: action.payload.username
+        username: action.payload.username,
       }
     case 'END_SESSION':
       return initialState
