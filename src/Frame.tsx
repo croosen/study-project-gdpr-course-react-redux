@@ -5,7 +5,6 @@ import './Frame.css';
 export class Frame extends React.Component {
 
   public componentDidMount() {
-    global.console.log('whoop')
     window.scrollTo(0, 0)
   }
 
