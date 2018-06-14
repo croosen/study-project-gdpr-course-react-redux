@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Router, Route, Switch, Link } from 'react-router-dom';
+import { HashRouter, Route, Switch, Link } from 'react-router-dom';
 
 import createHistory from 'history/createBrowserHistory'
 
@@ -21,7 +21,7 @@ import Results from './components/Course/Results'
 
 export default () => {
   return (
-     <Router history={history} basename={process.env.PUBLIC_URL}>
+     <HashRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path={process.env.PUBLIC_URL + '/'} component={App}/>
         <Route path={process.env.PUBLIC_URL + '/course/privacy'} component={Privacy}/>
@@ -33,6 +33,6 @@ export default () => {
         <Route path={process.env.PUBLIC_URL + '/course/case-strava'} component={CaseStrava}/>
         <Route path={process.env.PUBLIC_URL + '/course/results'} component={Results}/>
       </Switch>
-     </Router>
+     </HashRouter>
   )
 }

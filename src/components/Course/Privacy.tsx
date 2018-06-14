@@ -15,6 +15,7 @@ import { QuestionsPrivacy as questions } from '../../questions/questions'
 
 interface IStateProps {
   course?: any
+  submission?: any
   username?: string
 }
 
@@ -35,11 +36,11 @@ class Privacy extends React.Component<IProps> {
   }
 
   public render() {
-    const { username } = this.props
+    const { username, submission } = this.props
 
     return (
       <Frame>
-        <h1>Hoe bewust ben jij je van jouw privacy, <span className="highlighted">{username}</span>?</h1>
+        <h1>Hoe bewust ben jij je van jouw privacy, {username}?</h1>
 
         <p className="intro font-large">Als we het over privacy hebben, bedoelen we vaak twee dingen, dat we alleen kunnen zijn met anderen, of dat we er zeker van kunnen zijn dat anderen geen toegang hebben tot onze informatie. Het wel of niet hebben van privacy geeft aan in welke mate mensen de toegang tot hun eigen gegevens kunnen controleren.</p>
 
@@ -79,7 +80,7 @@ class Privacy extends React.Component<IProps> {
                 <ul>
                   {question.answers.map((answer: any, k: any) => (
                     // tslint:disable-next-line jsx-no-lambda
-                    <li key={k}><button onClick={() => this.handleAnswer(question.id, k)}>{answer}</button></li>
+                    <li key={k}><button onClick={() => this.handleAnswer(question.id, k)} className={submission[question.id] === k ? 'submitted' : ''}>{answer}</button></li>
                   ))}
                 </ul>
               </li>
@@ -88,7 +89,7 @@ class Privacy extends React.Component<IProps> {
         </div>
 
         <div className="navigator">
-          <Link to="/" className="navigator_button button-prev">Prev</Link>
+          <Link to={process.env.PUBLIC_URL + '/'} className="navigator_button button-prev">Prev</Link>
           <Link to={process.env.PUBLIC_URL + '/course/pii'} className="navigator_button button-next">Next</Link>
         </div>
       </Frame>
@@ -103,6 +104,7 @@ class Privacy extends React.Component<IProps> {
 function mapStateToProps(state: any, ownProps: any): IStateProps {
   return {
     course: state.course.course,
+    submission: state.session.courseSubmissions,
     username: state.session.username,
   }
 }

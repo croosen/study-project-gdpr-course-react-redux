@@ -52,7 +52,7 @@ class App extends React.Component<IState> {
 
   public handleSubmit = () : void => {
     Promise.resolve(store.dispatch(createSession(this.state.username)))
-    .then(() => this.props.history.push('/course/privacy'))
+    .then(() => this.props.history.push(process.env.PUBLIC_URL + '/course/privacy'))
   }
 }
 

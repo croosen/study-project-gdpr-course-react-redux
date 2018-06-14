@@ -15,6 +15,7 @@ import { QuestionsPii as questions } from '../../questions/questions'
 
 interface IStateProps {
   course?: any
+  submission?: any
   username?: string
 }
 
@@ -35,6 +36,7 @@ class Pii extends React.Component<IProps> {
   }
 
   public render() {
+    const { submission } = this.props
 
     return (
       <Frame>
@@ -124,7 +126,7 @@ class Pii extends React.Component<IProps> {
                 <ul>
                   {question.answers.map((answer: any, k: any) => (
                     // tslint:disable-next-line jsx-no-lambda
-                    <li key={k}><button onClick={() => this.handleAnswer(question.id, k)}>{answer}</button></li>
+                    <li key={k}><button onClick={() => this.handleAnswer(question.id, k)} className={submission[question.id] === k ? 'submitted' : ''}>{answer}</button></li>
                   ))}
                 </ul>
               </li>
@@ -133,8 +135,8 @@ class Pii extends React.Component<IProps> {
         </div>
 
         <div className="navigator">
-          <Link to="/course/privacy" className="navigator_button button-prev">Prev</Link>
-          <Link to="/course/law" className="navigator_button button-next">Next</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/privacy'} className="navigator_button button-prev">Prev</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/law'} className="navigator_button button-next">Next</Link>
         </div>
       </Frame>
     )
@@ -148,6 +150,7 @@ class Pii extends React.Component<IProps> {
 function mapStateToProps(state: any, ownProps: any): IStateProps {
   return {
     course: state.course.course,
+    submission: state.session.courseSubmissions,
     username: state.session.username,
   }
 }

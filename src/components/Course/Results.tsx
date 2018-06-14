@@ -18,10 +18,11 @@ class Results extends React.Component<IStateProps> {
     return (
       <Frame>
         <h1>Resultaten</h1>
+        Je krijgt nu een sticker
 
 
         <div className="navigator">
-          <Link to="/course/rights" className="navigator_button button-prev">Prev</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/rights'} className="navigator_button button-prev">Prev</Link>
         </div>
       </Frame>
     )

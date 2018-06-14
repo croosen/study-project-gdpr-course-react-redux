@@ -6,14 +6,36 @@ import { Frame } from '../../Frame'
 
 import { Link } from 'react-router-dom'
 
+import { setAnswer } from '../../store/session'
+
+import { store } from '../../store'
+
+import { QuestionsLaw as questions } from '../../questions/questions'
+
 interface IStateProps {
   course?: any
+  submission?: any
   username?: string
 }
 
-class Law extends React.Component<IStateProps> {
+interface IOwnState {
+  submissions: any,
+}
+
+interface IOwnProps {
+  onClick?: () => void,
+}
+
+type IProps = IStateProps & IOwnProps & IOwnState
+
+class Law extends React.Component<IProps> {
+
+  public state: IOwnState = {
+    submissions: []
+  }
 
   public render() {
+    const { submission } = this.props
 
     return (
       <Frame>
@@ -33,30 +55,37 @@ class Law extends React.Component<IStateProps> {
         <div className="questions">
           <h2>Vragen</h2>
           <ul>
-            <li>
-              <span className="question">Welke stelling is juist?</span>
-              <ul>
-                <li>De Wet bescherming persoonsgegevens gaat in op 25 mei 2018</li>
-                <li>De Wet bescherming persoonsgegevens vervangt de Algemene Verordening Gegevensbescherming</li>
-                <li>De Algemene Verordening Gegevensbescherming vervangt de Wet bescherming persoonsgegevens</li>
-                <li>De Algemene Verordening Gegevensbescherming geldt alleen binnen Nederland</li>
-              </ul>
-            </li>
+            {questions.map((question, i) => (
+              <li key={i}>
+                <h3>{question.question}</h3>
+                <ul>
+                  {question.answers.map((answer: any, k: any) => (
+                    // tslint:disable-next-line jsx-no-lambda
+                    <li key={k}><button onClick={() => this.handleAnswer(question.id, k)} className={submission[question.id] === k ? 'submitted' : ''}>{answer}</button></li>
+                  ))}
+                </ul>
+              </li>
+            ))}
           </ul>
         </div>
 
         <div className="navigator">
-          <Link to="/course/pii" className="navigator_button button-prev">Prev</Link>
-          <Link to="/course/rights" className="navigator_button button-next">Next</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/pii'} className="navigator_button button-prev">Prev</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/rights'} className="navigator_button button-next">Next</Link>
         </div>
       </Frame>
     )
+  }
+
+  private handleAnswer = (id: string, index: any) => {
+    store.dispatch(setAnswer(id, index))
   }
 }
 
 function mapStateToProps(state: any, ownProps: any): IStateProps {
   return {
     course: state.course.course,
+    submission: state.session.courseSubmissions,
     username: state.session.username,
   }
 }
