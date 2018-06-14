@@ -1,9 +1,11 @@
 export interface IState {
-  username?: string
+  courseSubmissions?: any,
+  username?: string,
 }
 
 const initialState: IState = {
-  username: ''
+  courseSubmissions: {},
+  username: '',
 }
 
 export const reducer = (state: IState = initialState, action: any): IState => {
@@ -15,6 +17,14 @@ export const reducer = (state: IState = initialState, action: any): IState => {
       }
     case 'END_SESSION':
       return initialState
+    case 'SET_ANSWER':
+      return {
+        ...state,
+        courseSubmissions: {
+          ...state.courseSubmissions,
+          [action.payload.id]: action.payload.answer
+        },
+      }
     default:
       return state
   }
