@@ -21,7 +21,7 @@ import Results from './components/Course/Results'
 
 export default () => {
   return (
-     <HashRouter basename={process.env.PUBLIC_URL}>
+     <HashRouter history={history} basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path={process.env.PUBLIC_URL + '/'} component={App}/>
         <Route path={process.env.PUBLIC_URL + '/course/privacy'} component={Privacy}/>
