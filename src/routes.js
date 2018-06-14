@@ -23,15 +23,15 @@ export default () => {
   return (
      <Router history={history} basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route exact path='/' component={App}/>
-        <Route path='/course/privacy' component={Privacy}/>
-        <Route path='/course/pii' component={Pii}/>
-        <Route path='/course/law' component={Law}/>
-        <Route path='/course/rights' component={Rights}/>
-        <Route path='/course/case-facebook' component={CaseFacebook}/>
-        <Route path='/course/case-tinder-grindr' component={CaseTinderGrindr}/>
-        <Route path='/course/case-strava' component={CaseStrava}/>
-        <Route path='/course/results' component={Results}/>
+        <Route exact path={process.env.PUBLIC_URL + '/'} component={App}/>
+        <Route path={process.env.PUBLIC_URL + '/course/privacy'} component={Privacy}/>
+        <Route path={process.env.PUBLIC_URL + '/course/pii'} component={Pii}/>
+        <Route path={process.env.PUBLIC_URL + '/course/law'} component={Law}/>
+        <Route path={process.env.PUBLIC_URL + '/course/rights'} component={Rights}/>
+        <Route path={process.env.PUBLIC_URL + '/course/case-facebook'} component={CaseFacebook}/>
+        <Route path={process.env.PUBLIC_URL + '/course/case-tinder-grindr'} component={CaseTinderGrindr}/>
+        <Route path={process.env.PUBLIC_URL + '/course/case-strava'} component={CaseStrava}/>
+        <Route path={process.env.PUBLIC_URL + '/course/results'} component={Results}/>
       </Switch>
      </Router>
   )
