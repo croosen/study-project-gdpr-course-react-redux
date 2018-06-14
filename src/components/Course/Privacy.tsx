@@ -89,7 +89,7 @@ class Privacy extends React.Component<IProps> {
 
         <div className="navigator">
           <Link to="/" className="navigator_button button-prev">Prev</Link>
-          <Link to="/course/pii" className="navigator_button button-next">Next</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/pii'} className="navigator_button button-next">Next</Link>
         </div>
       </Frame>
     )
