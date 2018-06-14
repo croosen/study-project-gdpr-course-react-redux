@@ -6,12 +6,33 @@ import { Frame } from '../../Frame'
 
 import { Link } from 'react-router-dom'
 
+import { setAnswer } from '../../store/session'
+
+import { store } from '../../store'
+
+import { QuestionsPrivacy as questions } from '../../questions/questions'
+
+
 interface IStateProps {
   course?: any
   username?: string
 }
 
-class Privacy extends React.Component<IStateProps> {
+interface IOwnState {
+  submissions: any,
+}
+
+interface IOwnProps {
+  onClick?: () => void,
+}
+
+type IProps = IStateProps & IOwnProps & IOwnState
+
+class Privacy extends React.Component<IProps> {
+
+  public state: IOwnState = {
+    submissions: []
+  }
 
   public render() {
     const { username } = this.props
@@ -25,16 +46,16 @@ class Privacy extends React.Component<IStateProps> {
         <p>We willen graag onze persoonlijke gegevens en de communicatie via het internet kunnen beschermen, buitenstaanders hoeven niet te weten wat wij met anderen communiceren, zeker als het om vertrouwelijke informatie gaat.</p>
 
         <h2>Recht op privacy</h2>
-        <p>Het recht op privacy is in Artikel 10 van de grondwet vastgelegd. De Nederlandse grondwet stelt:</p>
+        <p>Het recht op privacy is in <a href="https://www.denederlandsegrondwet.nl/id/via0icz1lvv8/artikel_10_privacy">Artikel 10 van de grondwet</a> vastgelegd. De Nederlandse grondwet stelt:</p>
 
         <blockquote>Ieder heeft, behoudens bij of krachtens de wet te stellen beperkingen, recht op eerbiediging van zijn persoonlijke levenssfeer.</blockquote>
 
         <h2>Definitie van privacy</h2>
-        <p>Volgens de definitie van de Van Dale betekent privacy:</p>
+        <p>Volgens de <a href="https://www.vandale.nl/gratis-woordenboek/nederlands/betekenis/privacy">definitie van de Van Dale</a> betekent privacy:</p>
 
         <blockquote>...de mogelijkheid om in eigen omgeving helemaal zichzelf te zijn: iemands privacy schenden zich ongevraagd met zijn privéleven bemoeien.</blockquote>
 
-        <p>Deze definitie van privacy is correct maar erg summier en houdt daarnaast niet direct verband met informationele privacy, of data privacy. Privacy is sinds 1966 een Burger Recht, aanvaard door de Verenigde Naties en vastgelegd in de Burgerrechten en Politieke Rechten (BuPo).</p>
+        <p>Deze definitie van privacy is correct maar erg summier en houdt daarnaast niet direct verband met informationele privacy, of data privacy. Privacy is sinds 1966 een Burger Recht, aanvaard door de Verenigde Naties en vastgelegd in de <a href="https://www.amnesty.nl/encyclopedie/vn-verdragen-1966-vn-verdrag-bupo-vn-verdrag-ecsocu">Burgerrechten en Politieke Rechten</a> (BuPo).</p>
 
         <h2>Informationele privacy</h2>
         <p>Deze definitie omvat een vroegere definitie van privacy. Echter door veranderingen in de maatschappij waarin digitale data een steeds grotere rol speelt, is er een nieuwe definitie van privacy bijgekomen, die voor informationele privacy, of data privacy. Informationele privacy is een relatief nieuw begrip. Woordenboek de Van Dale geeft daaropvolgend deze definitie:</p>
@@ -52,14 +73,17 @@ class Privacy extends React.Component<IStateProps> {
         <div className="questions">
           <h2>Vragen</h2>
           <ul>
-            <li>
-              <span className="question">Vraag</span>
-              <ul>
-                <li>Antwoord 1</li>
-                <li>Antwoord 2</li>
-                <li>Antwoord 3</li>
-              </ul>
-            </li>
+            {questions.map((question, i) => (
+              <li key={i}>
+                <h3>{question.question}</h3>
+                <ul>
+                  {question.answers.map((answer: any, k: any) => (
+                    // tslint:disable-next-line jsx-no-lambda
+                    <li key={k}><button onClick={() => this.handleAnswer(question.id, k)}>{answer}</button></li>
+                  ))}
+                </ul>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -69,6 +93,10 @@ class Privacy extends React.Component<IStateProps> {
         </div>
       </Frame>
     )
+  }
+
+  private handleAnswer = (id: string, index: any) => {
+    store.dispatch(setAnswer(id, index))
   }
 }
 
