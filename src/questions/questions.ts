@@ -24,8 +24,8 @@ export const createQuestion = (id: string, question: string, answers: any, corre
 export const QuestionsPrivacy = [
   createQuestion(
     "privacy_01",
-    "Privacy vraag 1",
-    ["Antwoord 1", "Antwoord 2", "Antwoord 3"],
+    "Heb jij het idee dat jouw privacy tijdens het surfen goed beschermd is?",
+    ["Ja", "Hoe kan ik zien of dat zo is?", "Nee, ik heb er geen vertrouwen in"],
     0
   ),
   createQuestion(
@@ -122,3 +122,11 @@ export const QuestionsRights = [
     0
   )
 ]
+
+export const allQuestions = QuestionsPrivacy
+    .concat(QuestionsPii)
+    .concat(QuestionsCaseFacebook)
+    .concat(QuestionsCaseStrava)
+    .concat(QuestionsCaseTinderGrindr)
+    .concat(QuestionsLaw)
+    .concat(QuestionsRights)
