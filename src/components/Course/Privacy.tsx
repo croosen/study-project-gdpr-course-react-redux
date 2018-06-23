@@ -40,7 +40,7 @@ class Privacy extends React.Component<IProps> {
 
     return (
       <Frame>
-        <h1>Hoe bewust ben jij je van jouw privacy, {username}?</h1>
+        <h1>{username ? username + ' is een persoonsgegeven!' : 'Jouw naam is een persoonsgegeven!'} </h1>
 
         <p className="intro font-large">Als we het over privacy hebben, bedoelen we vaak twee dingen, dat we alleen kunnen zijn met anderen, of dat we er zeker van kunnen zijn dat anderen geen toegang hebben tot onze informatie. Het wel of niet hebben van privacy geeft aan in welke mate mensen de toegang tot hun eigen gegevens kunnen controleren.</p>
 
@@ -51,25 +51,24 @@ class Privacy extends React.Component<IProps> {
 
         <blockquote>Ieder heeft, behoudens bij of krachtens de wet te stellen beperkingen, recht op eerbiediging van zijn persoonlijke levenssfeer.</blockquote>
 
+        Jouw recht op privacy is dus bij wet geregeld, behoudens de wet te stellen beperkingen. Er moet dus een gegronde, bij wet geregelde uitzondering van toepassing zijn wil dit recht niet gelden. Deze uitzonderingen hebben meestal te maken met politieonderzoek of fraudebestrijding, iets waarmee jij als het goed is niet snel te maken zult hebben.
+
         <h2>Definitie van privacy</h2>
         <p>Volgens de <a href="https://www.vandale.nl/gratis-woordenboek/nederlands/betekenis/privacy">definitie van de Van Dale</a> betekent privacy:</p>
 
         <blockquote>...de mogelijkheid om in eigen omgeving helemaal zichzelf te zijn: iemands privacy schenden zich ongevraagd met zijn privéleven bemoeien.</blockquote>
 
-        <p>Deze definitie van privacy is correct maar erg summier en houdt daarnaast niet direct verband met informationele privacy, of data privacy. Privacy is sinds 1966 een Burger Recht, aanvaard door de Verenigde Naties en vastgelegd in de <a href="https://www.amnesty.nl/encyclopedie/vn-verdragen-1966-vn-verdrag-bupo-vn-verdrag-ecsocu">Burgerrechten en Politieke Rechten</a> (BuPo).</p>
+        <p>Deze definitie van privacy is correct maar verouderd en erg summier. Het houdt daarnaast niet direct verband met informationele privacy of data privacy, een vorm van privacy die op dit moment het meest actueel is. Privacy is sinds 1966 een Burger Recht, aanvaard door de Verenigde Naties en vastgelegd in de <a href="https://www.amnesty.nl/encyclopedie/vn-verdragen-1966-vn-verdrag-bupo-vn-verdrag-ecsocu">Burgerrechten en Politieke Rechten</a> (BuPo).</p>
 
         <h2>Informationele privacy</h2>
-        <p>Deze definitie omvat een vroegere definitie van privacy. Echter door veranderingen in de maatschappij waarin digitale data een steeds grotere rol speelt, is er een nieuwe definitie van privacy bijgekomen, die voor informationele privacy, of data privacy. Informationele privacy is een relatief nieuw begrip. Woordenboek de Van Dale geeft daaropvolgend deze definitie:</p>
+        <p>Deze definitie omvat een vroegere definitie van privacy. Echter door veranderingen in de maatschappij waarin digitale data een steeds grotere rol speelt, is er een nieuwe definitie van privacy bijgekomen, die voor informationele privacy, of data privacy. Informationele privacy is een relatief nieuw begrip. Woordenboek de Van Dale geeft daaropvolgend deze definities:</p>
 
         <blockquote>Informationele privacy; bescherming van persoonsgegevens, m.n. het recht om niet meer informatie over zichzelf te verstrekken en aan niet meer personen dan strikt noodzakelijk is, en het recht om te weten welke persoonlijke informatie er in omloop is, hoe die verzameld is en wat ermee gedaan wordt.</blockquote>
 
         <blockquote>Informationele privacy omvat een groot gebied binnen het dagelijkse leven van individuen. Bij elke aankoop, gebruik van een online of offline dienst of communicatie spelen informatie en persoonsgegevens een rol. Veel gegevens hebben als eigenschap dat deze beschermd moeten worden voor correct gebruik en integriteit binnen een systeem of organisatie. Hieronder vallen onder andere bankgegevens, verzekeringsgegevens, computerbestanden, email- of sms berichten en reisgegevens.</blockquote>
 
         <h2>Jouw privacy en de wet</h2>
-        <p>Per 25 mei 2018 geldt er een nieuwe wet voor alle landen in de EU: de Algemene Verordening Gegevensbescherming (AVG). De AVG is ook wel bekend onder de Engelse naam: General Data Protection Regulation (GDPR). De nieuwe wet geeft bedrijven een grotere verantwoordelijkheid om de privacy van personen te beschermen. Verderop bespreken we uitgebreid wat de AVG precies is, en wat die voor jou betekent.</p>
-
-        <h2>Jouw privacy is waardevol</h2>
-        <p>[TODO] Stukje over hoe je je privacy niet moet onderschatten, en wat het voor een waarde heeft voor jezelf. (bewustwording)</p>
+        <p>Per 25 mei 2018 geldt er een nieuwe wet voor alle landen binnen de EU: de Algemene Verordening Gegevensbescherming (AVG). De AVG is ook wel bekend onder de Engelse naam: General Data Protection Regulation (GDPR). Deze nieuwe wet geeft bedrijven een grotere verantwoordelijkheid om de privacy van personen te beschermen. Verderop bespreken we uitgebreid wat de AVG precies is, en wat die voor jou betekent.</p>
 
         <div className="questions">
           <h2>Vragen</h2>

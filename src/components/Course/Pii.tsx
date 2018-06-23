@@ -82,40 +82,37 @@ class Pii extends React.Component<IProps> {
         <h2>De verwerking van jouw gegevens door bedrijven en organisaties</h2>
         <p>Bedrijven en organisaties mogen niet zomaar jouw persoonsgegevens verwerken. Daarvoor moet, volgens Artikel 6 van de AVG, een <a href="http://www.privacy-regulation.eu/nl/artikel-6-rechtmatigheid-van-de-verwerking-EU-AVG.htm">wettelijke grondslag</a> zijn. Het verwerken van bijzondere persoonsgegevens is verboden, tenzij een bedrijf of organisatie zich kan beroepen op een specifieke wettelijke uitzondering én op één  van de zes grondslagen voor het verwerken van ‘gewone’ persoonsgegevens. Dit zijn echter uitzonderlijke gevallen. De zes grondslagen zijn:</p>
 
-        <h2>Toestemming van betrokkene</h2>
+        <h3>Toestemming van betrokkene</h3>
         <p>De betrokkene heeft toestemming gegeven voor de verwerking van zijn persoonsgegevens voor een of meer specifieke doeleinden;</p>
 
-        <p>Jij moet dus expliciet toestemming geven voor het gebruik van jouw gegevens. Dit gebeurt vaak online door het aanvinken van vakjes waarin je toestemt met de verwerking van je persoonsgegevens, zoals bij het aanmelden van een nieuwsbrief.</p>
+        <p><i>Jij moet dus expliciet toestemming geven voor het gebruik van jouw gegevens. Dit gebeurt vaak online door het aanvinken van vakjes waarin je toestemt met de verwerking van je persoonsgegevens, zoals bij het aanmelden van een nieuwsbrief.</i></p>
 
-        <h2>Noodzakelijk voor uitvoering overeenkomst</h2>
+        <h3>Noodzakelijk voor uitvoering overeenkomst</h3>
         <p>De verwerking is noodzakelijk voor de uitvoering van een overeenkomst waarbij de betrokkene partij is, of om op verzoek van de betrokkene vóór de sluiting van een overeenkomst maatregelen te nemen;</p>
 
-        <p>Dit zijn bijvoorbeeld gegevens die een bedrijf nodig heeft als je een telefoonabonnement afsluit. De telefoonmaatschappij moet jou bijvoorbeeld een factuur kunnen sturen.</p>
+        <p><i>Dit zijn bijvoorbeeld gegevens die een bedrijf nodig heeft als je een telefoonabonnement afsluit. De telefoonmaatschappij moet jou bijvoorbeeld een factuur kunnen sturen.</i></p>
 
-        <h2>Noodzakelijk door wettelijke verplichting</h2>
+        <h3>Noodzakelijk door wettelijke verplichting</h3>
         <p>De verwerking is noodzakelijk om te voldoen aan een wettelijke verplichting die op de verwerkingsverantwoordelijke rust;</p>
 
-        <p>Zoals het geven van een kopietje van je identiteitsbewijs aan je werkgever, zodat deze je bij de Belastingdienst kan aanmelden. De werkgever heeft een wettelijke verplichting om dit te doen.</p>
+        <p><i>Zoals het geven van een kopietje van je identiteitsbewijs aan je werkgever, zodat deze je bij de Belastingdienst kan aanmelden. De werkgever heeft een wettelijke verplichting om dit te doen.</i></p>
 
-        <p>Sommige bedrijven vragen bij indiensttreding een kopie bankpas. Dit is niet wettelijk verplicht en alleen voor het gemak van de werkgever. Het is dus aan jou om te bepalen hoe je hiermee omgaat. Je kunt bijvoorbeeld ook een verklaring tekenen dat het door jou opgegeven rekeningnummer ook echt op jouw naam staat.</p>
+        <p><i>Sommige bedrijven vragen bij indiensttreding een kopie bankpas. Dit is niet wettelijk verplicht en alleen voor het gemak van de werkgever. Het is dus aan jou om te bepalen hoe je hiermee omgaat. Je kunt bijvoorbeeld ook een verklaring tekenen dat het door jou opgegeven rekeningnummer ook echt op jouw naam staat.</i></p>
 
-        <h2>Noodzaak door vitale belangen</h2>
+        <h3>Noodzaak door vitale belangen</h3>
         <p>De verwerking is noodzakelijk om de vitale belangen van de betrokkene of van een andere natuurlijke persoon te beschermen;</p>
 
-        <p>Een vitaal belang is aan de orde als het over een belang gaat dat essentieel is voor iemands leven of gezondheid en die persoon niet in staat is om toestemming te verlenen. Een ambulancemedewerker mag zonder jouw toestemming je gegevens gebruiken om bijvoorbeeld je bloedgroep te achterhalen, op het moment dat jij niet in staat bent dat te vertellen.</p>
+        <p><i>Een vitaal belang is aan de orde als het over een belang gaat dat essentieel is voor iemands leven of gezondheid en die persoon niet in staat is om toestemming te verlenen. Een ambulancemedewerker mag zonder jouw toestemming je gegevens gebruiken om bijvoorbeeld je bloedgroep te achterhalen, op het moment dat jij niet in staat bent dat te vertellen.</i></p>
 
         <h2>Noodzakelijk door algemeen belang</h2>
         <p>De verwerking is noodzakelijk voor de vervulling van een taak van algemeen belang of van een taak in het kader van de uitoefening van het openbaar gezag dat aan de verwerkingsverantwoordelijke is opgedragen;</p>
 
-        <p>Dit recht wordt met name door de overheid gebruikt. Een voorbeeld is een gemeente die camera’s ophangt op een bepaalde plek om toezicht te houden met betrekking tot openbare veiligheid.</p>
+        <p><i>Dit recht wordt met name door de overheid gebruikt. Een voorbeeld is een gemeente die camera’s ophangt op een bepaalde plek om toezicht te houden met betrekking tot openbare veiligheid.</i></p>
 
-        <h2>Noodzakelijk door gerechtvaardigde belangen</h2>
+        <h3>Noodzakelijk door gerechtvaardigde belangen</h3>
         <p>De verwerking is noodzakelijk voor de behartiging van de gerechtvaardigde belangen van de verwerkingsverantwoordelijke of van een derde, behalve wanneer de belangen of de grondrechten en de fundamentele vrijheden van de betrokkene die tot bescherming van persoonsgegevens nopen, zwaarder wegen dan die belangen, met name wanneer de betrokkene een kind is.</p>
 
-        <p>Dit belang moet rechtmatig, voldoende duidelijk verwoord en ook echt aanwezig zijn. Dat is zo wanneer een verwerking aantoonbaar noodzakelijk is om bijvoorbeeld bedrijfsactiviteiten te verrichten, zoals het voeren van een personeelsadministratie. Een bedrijf of organisatie mag dus niet zomaar “vinden” dat er reden is voor deze grondslag.</p>
-
-        <h2>Bescherm je persoonsgegevens</h2>
-        [TODO] Stukje over hoe je eenvoudig in de basis je eigen persoonsgegevens beschermt
+        <p><i>Dit belang moet rechtmatig, voldoende duidelijk verwoord en ook echt aanwezig zijn. Dat is zo wanneer een verwerking aantoonbaar noodzakelijk is om bijvoorbeeld bedrijfsactiviteiten te verrichten, zoals het voeren van een personeelsadministratie. Een bedrijf of organisatie mag dus niet zomaar “vinden” dat er reden is voor deze grondslag.</i></p>
 
         <div className="questions">
           <h2>Vragen</h2>

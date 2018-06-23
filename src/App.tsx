@@ -25,11 +25,13 @@ class App extends React.Component<IState> {
       <Frame>
         <div className="introduction">
 
-          <h1>Hallo! Dit is een cursus over Privacy</h1>
+          <h1>Ben jij een struisvogel?</h1>
 
-          <p className="intro font-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet risus nunc. Curabitur quis lorem quis risus maximus imperdiet. In porttitor sodales ullamcorper. Pellentesque imperdiet pharetra finibus. Vivamus pretium turpis justo. Praesent pretium.</p>
+          <p className="intro font-large">Ben jij ook een struisvogel? Iemand die online overal hetzelfde wachtwoord gebruikt, kopietjes ID via mail verstuurt, of gewoon accountinformatie in Evernote plakt? Je weet heel goed dat dit niet de meest veilige handelingen zijn. En toch doe je het. Omdat het makkelijk is, of omdat je denkt “het zal wel goed komen”.</p>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet risus nunc. Curabitur quis lorem quis risus maximus imperdiet. In porttitor sodales ullamcorper. Pellentesque imperdiet pharetra finibus. Vivamus pretium turpis justo. Praesent pretium, dui pretium condimentum pretium, lectus purus ultrices magna, in bibendum urna sem id nunc. Etiam venenatis lectus ut diam aliquet, in finibus leo mollis. Sed consectetur felis nec augue blandit, vel dapibus massa convallis. Proin id porta nisi. Ut a quam mi. Nulla fermentum nulla nunc, nec egestas metus cursus in.</p>
+          <p>De risico’s van struisvogelgedrag zijn groot. Maar eigenlijk sta je er nooit bewust bij stil. “Mij overkomt dat niet”, is iets wat je dan denkt. Hoe groot zijn die risico’s eigenlijk? Wat zet je op het spel wanneer je zo onzorgvuldig met je eigen online privacy en veiligheid omgaat? Wat kunnen kwaadwillenden doen met jouw gegevens? En hoe makkelijk is het eigenlijk om iets te doen met andermans gegevens?</p>
+
+          <p>Deze mini-cursus leert jou wat privacy gevoelige gegevens zijn, wat mensen ermee kunnen doen en wat je zelf kunt doen om misbruik te beperken. Wees niet langer een struisvogel!</p>
 
           <div className="course_cta">
             <h2>Hoe heet je?</h2>
