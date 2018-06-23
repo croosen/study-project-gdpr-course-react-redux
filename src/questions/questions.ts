@@ -60,7 +60,7 @@ export const QuestionsCaseFacebook = [
       "Ik Google naar een test en vul de eerste test in die ik tegen kom",
       "Ik zoek naar een aantal testen of apps en vergelijk deze om de beste te vinden",
       "Ik zoek naar een aantal testen of apps, vergelijk deze maar check ook welke bedrijven achter de test zitten en wat zij met mijn data doen",
-      "Geen van allen, ik vul geen online testen in."
+      "Geen van allen, ik vul geen online testen in"
     ],
     4
   ),
@@ -81,9 +81,13 @@ export const QuestionsCaseFacebook = [
 export const QuestionsCaseStrava = [
   createQuestion(
     "casestr_01",
-    "Strava vraag 1",
-    ["Antwoord 1", "Antwoord 2", "Antwoord 3"],
-    2
+    "Je gebruikt een app voor het hardlopen, en de app vraagt of je je locatie-deling wilt aanzetten. Wat doe jij?",
+    [
+      "Dat doe ik, anders kan ik niet zien waar ik gelopen heb",
+      "Ik doe het wel, maar controleer eerst hoe deze data gebruikt wordt en eventueel kijk ik ook naar een alternatief",
+      "Nee, ik registreer mijn hardlooprondje liever niet op een kaart"
+    ],
+    1
   ),
   createQuestion(
     "casest_02",
@@ -92,20 +96,29 @@ export const QuestionsCaseStrava = [
     0
   )
 ]
+
 export const QuestionsCaseTinderGrindr = [
   createQuestion(
     "casetdrgr_01",
-    "Tdgr vraag 1",
-    ["Antwoord 1", "Antwoord 2", "Antwoord 3"],
-    2
+    "Naast Tinder verschijnt er weer een nieuwe dating-app die je via Facebook kunt gebruiken. Tijdens de registratie wordt gevraagd naar je geaardheid. Vul je dit in?",
+    [
+        "Ik vul zo min mogelijk in. Als het niet verplicht is niet, anders wel",
+        "Nee, als het verplicht wordt gesteld, maak ik geen gebruik van deze app",
+        "Ja, mijn geaardheid is geen geheim"
+    ],
+    1
   ),
   createQuestion(
     "casetdrgr_02",
-    "Tdgr vraag 2",
-    ["Antwoord 1a", "Antwoord 1b"],
-    0
+    "Je maakt gebruik van een dating app en deze app vraagt je om toegang te geven tot je foto's. Geef je die toestemming?",
+    [
+      "Ja, ik moet immers mijn foto's kunnen delen met potentiele dates",
+      "Nee, ik vind het geen fijn idee dat deze app mijn hele foto album kan bekijken"
+    ],
+    1
   )
 ]
+
 export const QuestionsLaw = [
   createQuestion(
     "law_01",
@@ -120,6 +133,7 @@ export const QuestionsLaw = [
     0
   )
 ]
+
 export const QuestionsRights = [
   createQuestion(
     "rights_01",

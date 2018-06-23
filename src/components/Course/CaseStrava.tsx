@@ -12,6 +12,9 @@ import { store } from '../../store'
 
 import { QuestionsCaseStrava as questions } from '../../questions/questions'
 
+import base from '../../assets/case-strava/base.jpg'
+import strava from '../../assets/case-strava/strava.jpg'
+
 interface IStateProps {
   course?: any
   submission?: any
@@ -40,6 +43,11 @@ class CaseStrava extends React.Component<IProps> {
     return (
       <Frame>
         <h1>Case: Strava bracht geheime militaire basis aan het licht</h1>
+
+        <div className="image">
+          <img src={strava} alt="" />
+        </div>
+
         <p className="font-large">Strava, een ideale app om al je sportactiviteiten mee te registreren, maar hoe is het gesteld met de privacy van de gebruiker? Een wielrenner wil niet na een middag fietsen, onaangenaam verrast worden en thuiskomen in een leeg huis.</p>
 
         <h2>Sociale sport app</h2>
@@ -52,7 +60,16 @@ class CaseStrava extends React.Component<IProps> {
 
         <p>In 2014 was al in het nieuws dat dieven gebruik maakten van Strava-data om dure fietsen te stelen: de eigenaar maakte trots foto’s van zijn gloednieuwe fiets en de dieven hoefden alleen maar op het kaartje de woonplaats van de eigenaar op te zoeken.</p>
 
+        <h2>Geheime militaire bases aan het licht gebracht</h2>
+
+        <div className="image">
+          <img src={base} alt="" />
+        </div>
+
         <p>Strava is in maart 2018 opnieuw in het nieuws omdat de locaties van geheime militaire bases aan het licht kwamen. Op de heatmap is te zien waar gebruikers vaak hun rondjes lopen en fietsen. En als dat op ‘verlaten’ plekken in een oorlogsgebied is, trekt dat natuurlijk de aandacht. Misschien ben je nu bezorgd of het nog wel een goed idee is om je routes te delen met Strava, ook al is dat een van de pijlers van de community. Het gaat erom dat je je hardlooprondjes en fietsroutes deelt met anderen, zodat je de snelste op een bepaald parcours bent of kunt kijken waar je vrienden tijdens de vakantie hebben gesport.</p>
+
+        <h2>Identiteit van specifieke personen te achterhalen</h2>
+        <p>Volgens de Britse krant The Guardian is het echter nog erger gesteld. Uit alle anonieme data kan immers ook de identiteit van specifieke personen worden ontwaard, zo blijkt. Dat kan als de personen in kwestie de standaard privcay-instellingen van Strava gebruiken. Via de website kan doorgeklikt worden om profielen en best-tijden van specifieke routes te vinden. Op routes waar weinig volk passeert - militaire basissen in Djibouti of ambassades in Noord-Korea bijvoorbeeld - is het zo makkelijk om informatie over individuen te ontwaren.</p>
 
         <p>Het is niet alleen een militair probleem. Veel mensen vinden het onprettig als wildvreemden kunnen zien waar ze wonen en welke route ze nemen. In augustus 2017 bleek al uit de ervaringen van Rosie Spinks dat het vrij lastig is om je Strava-account privacy vriendelijker te maken en af te schermen van vreemden, als je wel gegevens met vrienden wilt delen. Strava bleek verschillende verborgen privacy-instellingen te hebben en via de app was haar locatie toch op bepaalde manieren te achterhalen.</p>
 
