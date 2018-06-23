@@ -24,29 +24,46 @@ export const createQuestion = (id: string, question: string, answers: any, corre
 export const QuestionsPrivacy = [
   createQuestion(
     "privacy_01",
-    "Heb jij het idee dat jouw privacy tijdens het surfen goed beschermd is?",
-    ["Ja", "Hoe kan ik zien of dat zo is?", "Nee, ik heb er geen vertrouwen in"],
+    "Hoeveel waarde hecht jij aan je online privacy?",
+    [
+        "Veel, ik ben me ervan bewust dat mijn data beschermt moet worden",
+        "Niet zoveel, het maakt mij niet uit of websites mijn naam of adres weten",
+        "Geen, ik heb niets te verbergen"
+    ],
     0
   ),
   createQuestion(
     "privacy_02",
-    "Privacy vraag 2",
-    ["Antwoord 1a", "Antwoord 1b"],
-    1
+    "Als jij op het internet rondsurft van de ene website naar de andere, heb je dan het idee dat jouw privacy in gevaar is?",
+    [
+      "Nee, volgens mij is mijn privacy gewoon goed beschermd",
+      "Niet echt, omdat ik niet zeker weet wat er over mij wordt opgeslagen",
+      "Ja, ik heb het idee dat websites soms teveel gegevens van me opslaan"
+    ],
+    2
   )
 ]
 
 export const QuestionsPii = [
   createQuestion(
     "pii_01",
-    "Pii vraag 1",
-    ["Antwoord 1", "Antwoord 2", "Antwoord 3"],
+    "Je wilt je aanmelden bij een cursus theologie. Op het formulier wordt naar je geloofsovertuiging gevraagd. Vul jij dat in?",
+    [
+      "Ja, ik neem aan dat dit nodig is voor de cursus",
+      "Ik weet het niet, misschien dat ik iets neutraals invul",
+      "Nee, want geloofsovertuiging is een bijzonder persoonsgegeven en deze mag niet zomaar verwerkt worden"
+    ],
     2
   ),
   createQuestion(
     "pii_02",
-    "Pii vraag 2",
-    ["Antwoord 1a", "Antwoord 1b"],
+    "Je wilt inchecken bij je hotel, en bij de balie wordt om een kopie van je paspoort gevraagd. Wat doe jij?",
+    [
+      "Ik weiger, ze mogen mijn paspoort bekijken, maar geen kopie maken",
+      "Ik geef mijn paspoort, anders kan ik mijn kamer niet in",
+      "Ik heb zelf altijd kopietjes bij me, met mijn foto en BSN afgeschermd",
+      "Ik sta het toe, maar vraag de kopie terug om mijn foto en BSN door te krassen"
+    ],
     0
   )
 ]
