@@ -53,8 +53,15 @@ a, a:focus, a:visited {
   width: calc(100% + 6rem);
 }
 
+.image {
+  position: relative;
+  z-index: 2;
+  margin: 3rem -3rem 3rem -3rem;
+  width: calc(100% + 6rem);
+}
+
 @media (max-width: 780px) {
-  .questions {
+  .questions, .image {
     margin: 2rem -2rem 2rem -2rem;
     width: calc(100% + 4rem);
   }
@@ -92,6 +99,9 @@ a, a:focus, a:visited {
   background-color: #eee;
 }
 
+.image img {
+  max-width: 100%;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
