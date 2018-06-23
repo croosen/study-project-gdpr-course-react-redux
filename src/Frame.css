@@ -142,13 +142,12 @@ blockquote {
 }
 blockquote:before {
     content: '“';
-    font-size: 4rem;
+    font-size: 4.4rem;
     line-height: 1;
     color: #ccc;
     position: absolute;
     left: 0;
     top: 0;
-    transform: translateY(-.5rem);
 }
 @media (max-width: 780px) {
   blockquote {
