@@ -99,7 +99,7 @@ class CaseTinderGrindr extends React.Component<IProps> {
         </div>
 
         <div className="navigator">
-          <Link to={process.env.PUBLIC_URL + '/course/case-tinder-grindr'} className="navigator_button button-prev">Prev</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/case-facebook'} className="navigator_button button-prev">Prev</Link>
           <Link to={process.env.PUBLIC_URL + '/course/case-strava'} className="navigator_button button-next">Next</Link>
         </div>
       </Frame>

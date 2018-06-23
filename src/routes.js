@@ -11,6 +11,7 @@ import Pii from './components/Course/Pii'
 import Privacy from './components/Course/Privacy'
 import Law from './components/Course/Law'
 import Rights from './components/Course/Rights'
+import Risks from './components/Course/Risks'
 
 import CaseFacebook from './components/Course/CaseFacebook'
 import CaseStrava from './components/Course/CaseStrava'
@@ -28,6 +29,7 @@ export default () => {
         <Route path={process.env.PUBLIC_URL + '/course/pii'} component={Pii}/>
         <Route path={process.env.PUBLIC_URL + '/course/law'} component={Law}/>
         <Route path={process.env.PUBLIC_URL + '/course/rights'} component={Rights}/>
+        <Route path={process.env.PUBLIC_URL + '/course/risks'} component={Risks}/>
         <Route path={process.env.PUBLIC_URL + '/course/case-facebook'} component={CaseFacebook}/>
         <Route path={process.env.PUBLIC_URL + '/course/case-tinder-grindr'} component={CaseTinderGrindr}/>
         <Route path={process.env.PUBLIC_URL + '/course/case-strava'} component={CaseStrava}/>

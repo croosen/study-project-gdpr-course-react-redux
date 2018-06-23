@@ -97,7 +97,7 @@ class Rights extends React.Component<IProps> {
 
         <div className="navigator">
           <Link to={process.env.PUBLIC_URL + '/course/law'} className="navigator_button button-prev">Prev</Link>
-          <Link to={process.env.PUBLIC_URL + '/course/case-facebook'} className="navigator_button button-next">Next</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/risks'} className="navigator_button button-next">Next</Link>
         </div>
       </Frame>
     )

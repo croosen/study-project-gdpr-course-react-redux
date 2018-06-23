@@ -72,7 +72,7 @@ class Results extends React.Component<IProps> {
         { results }
 
         <div className="navigator">
-          <Link to={process.env.PUBLIC_URL + '/course/rights'} className="navigator_button button-prev">Prev</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/case-strava'} className="navigator_button button-prev">Prev</Link>
         </div>
       </Frame>
     )
