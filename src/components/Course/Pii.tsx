@@ -36,13 +36,14 @@ class Pii extends React.Component<IProps> {
   }
 
   public render() {
-    const { submission } = this.props
+    const { submission, username } = this.props
 
     return (
       <Frame>
         <h1>Jouw persoonsgegevens</h1>
 
-        <p className="font-large">De Algemene Verordening Gegevensbescherming (AVG), voorheen De Wet bescherming persoonsgegevens (Wbp), geeft aan dat een persoonsgegeven elk gegeven is over een geïdentificeerde of identificeerbare natuurlijke persoon. Dit betekent dat informatie ofwel direct over iemand gaat, ofwel naar deze persoon te herleiden is. Dat het om een natuurlijke persoon moet gaan, houdt in dat gegevens van overleden personen of van organisaties geen persoonsgegevens zijn.</p>
+        <p className="font-large">De Algemene Verordening Gegevensbescherming (AVG), voorheen De Wet bescherming persoonsgegevens (Wbp), geeft aan dat een persoonsgegeven elk gegeven is over een geïdentificeerde of identificeerbare natuurlijke persoon. Dit betekent dat informatie ofwel direct over iemand gaat, ofwel naar deze persoon te herleiden is. Dat het om een natuurlijke persoon moet gaan, houdt in dat gegevens van overleden personen of van organisaties geen persoonsgegevens zijn.
+        {username ? ' Jouw voornaam is dus ook een persoonsgegeven, ' + username + '!' : ' Je voornaam is dus ook een persoonsgegeven.'}</p>
 
         <h2>Persoonsgegevens en bijzondere persoonsgegevens</h2>
         <p>Het begrip 'persoonsgegevens' wordt in de Wbp in artikel 2, onder a, omschreven als 'alle informatie betreffende een geïdentificeerde of <a href="https://autoriteitpersoonsgegevens.nl/nl/over-privacy/wetten/wbp-naslag/hoofdstuk-1-algemene-bepalingen-art-1-tm-5/artikel-1-sub-wbp">identificeerbare natuurlijke persoon</a>. Deze omschrijving sluit aan bij die van het begrip 'personal data' in het Dataprotectieverdrag waar wordt gesproken van <a href="http://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31995L0046">'any information relating to an identified or identifiable individual.</a></p>

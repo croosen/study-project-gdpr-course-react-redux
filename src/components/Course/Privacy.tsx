@@ -40,7 +40,7 @@ class Privacy extends React.Component<IProps> {
 
     return (
       <Frame>
-        <h1>{username ? username + ' is een persoonsgegeven!' : 'Jouw naam is een persoonsgegeven!'} </h1>
+        <h1>{username ? username + ' , hoeveel waarde hecht jij aan je privacy?' : 'Hoeveel waarde hecht jij aan je privacy?'} </h1>
 
         <p className="intro font-large">Als we het over privacy hebben, bedoelen we vaak twee dingen, dat we alleen kunnen zijn met anderen, of dat we er zeker van kunnen zijn dat anderen geen toegang hebben tot onze informatie. Het wel of niet hebben van privacy geeft aan in welke mate mensen de toegang tot hun eigen gegevens kunnen controleren.</p>
 
@@ -68,7 +68,7 @@ class Privacy extends React.Component<IProps> {
         <blockquote>Informationele privacy omvat een groot gebied binnen het dagelijkse leven van individuen. Bij elke aankoop, gebruik van een online of offline dienst of communicatie spelen informatie en persoonsgegevens een rol. Veel gegevens hebben als eigenschap dat deze beschermd moeten worden voor correct gebruik en integriteit binnen een systeem of organisatie. Hieronder vallen onder andere bankgegevens, verzekeringsgegevens, computerbestanden, email- of sms berichten en reisgegevens.</blockquote>
 
         <h2>Jouw privacy en de wet</h2>
-        <p>Per 25 mei 2018 geldt er een nieuwe wet voor alle landen binnen de EU: de Algemene Verordening Gegevensbescherming (AVG). De AVG is ook wel bekend onder de Engelse naam: General Data Protection Regulation (GDPR). Deze nieuwe wet geeft bedrijven een grotere verantwoordelijkheid om de privacy van personen te beschermen. Verderop bespreken we uitgebreid wat de AVG precies is, en wat die voor jou betekent.</p>
+        <p>Per 25 mei 2018 geldt er een nieuwe wet voor alle landen binnen de EU: de Algemene Verordening Gegevensbescherming (AVG). De AVG is ook wel bekend onder de Engelse naam: General Data Protection Regulation (GDPR). Deze nieuwe wet geeft bedrijven een grotere verantwoordelijkheid om de privacy van personen te beschermen. Verderop bespreken we uitgebreid wat de AVG precies is, en wat die voor jou en jouw privacy betekent.</p>
 
         <div className="questions">
           <h2>Vragen</h2>
