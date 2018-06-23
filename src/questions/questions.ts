@@ -54,15 +54,27 @@ export const QuestionsPii = [
 export const QuestionsCaseFacebook = [
   createQuestion(
     "casefb_01",
-    "FB vraag 1",
-    ["Antwoord 1", "Antwoord 2", "Antwoord 3"],
-    2
+    "Je wilt graag iets weten over je eigen persoonlijkheid. Je gaat online op zoek naar een test. Wat is op jou van toepassing?",
+    [
+      "Ik kijk in de appstore en download een willekeurige test app",
+      "Ik Google naar een test en vul de eerste test in die ik tegen kom",
+      "Ik zoek naar een aantal testen of apps en vergelijk deze om de beste te vinden",
+      "Ik zoek naar een aantal testen of apps, vergelijk deze maar check ook welke bedrijven achter de test zitten en wat zij met mijn data doen",
+      "Geen van allen, ik vul geen online testen in."
+    ],
+    4
   ),
   createQuestion(
     "casefb_02",
-    "FB vraag 2",
-    ["Antwoord 1a", "Antwoord 1b"],
-    0
+    "Je krijgt van een vriend(in) een uitnodiging om via een app samen een test in te vullen, zodat je elkaars score kunt vergelijken. Wat doe jij?",
+    [
+      "Ik sla de uitnodiging af, ik doe daar nooit aan mee",
+      "Ik kijk eerst goed welke app het is en wat deze app voor data verzameld",
+      "Ik sla de uitnodiging af en raadt mijn vrienden aan om voorzichtig te zijn met de data die ze delen",
+      "Ik doe gewoon mee, ik vind het niet zo belangrijk wat er met mijn antwoorden gebeurt",
+      "Ik doe gewoon mee"
+    ],
+    2
   )
 ]
 
