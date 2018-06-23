@@ -93,7 +93,7 @@ class Risks extends React.Component<IProps> {
         <p><a href="https://haveibeenpwned.com/">HaveIBeenPwned.com</a> is een website om te controleren of je email adres is buitgemaakt door hacks of datalekken.</p>
 
         <div className="questions">
-          <h2>Vragen</h2>
+          <h2>Inzichtvragen</h2>
           <ul>
             {questions.map((question, i) => (
               <li key={i}>

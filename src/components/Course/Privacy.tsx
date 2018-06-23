@@ -71,7 +71,7 @@ class Privacy extends React.Component<IProps> {
         <p>Per 25 mei 2018 geldt er een nieuwe wet voor alle landen binnen de EU: de Algemene Verordening Gegevensbescherming (AVG). De AVG is ook wel bekend onder de Engelse naam: General Data Protection Regulation (GDPR). Deze nieuwe wet geeft bedrijven een grotere verantwoordelijkheid om de privacy van personen te beschermen. Verderop bespreken we uitgebreid wat de AVG precies is, en wat die voor jou en jouw privacy betekent.</p>
 
         <div className="questions">
-          <h2>Vragen</h2>
+          <h2>Inzichtvragen</h2>
           <ul>
             {questions.map((question, i) => (
               <li key={i}>

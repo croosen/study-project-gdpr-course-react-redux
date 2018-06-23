@@ -116,7 +116,7 @@ class Pii extends React.Component<IProps> {
         <p><i>Dit belang moet rechtmatig, voldoende duidelijk verwoord en ook echt aanwezig zijn. Dat is zo wanneer een verwerking aantoonbaar noodzakelijk is om bijvoorbeeld bedrijfsactiviteiten te verrichten, zoals het voeren van een personeelsadministratie. Een bedrijf of organisatie mag dus niet zomaar “vinden” dat er reden is voor deze grondslag.</i></p>
 
         <div className="questions">
-          <h2>Vragen</h2>
+          <h2>Inzichtvragen</h2>
           <ul>
             {questions.map((question, i) => (
               <li key={i}>

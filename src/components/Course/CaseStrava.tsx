@@ -93,7 +93,7 @@ class CaseStrava extends React.Component<IProps> {
         <p>De privacy settings van Strava zijn niet de eenvoudigste om in te stellen. Je hebt de standaard en de "enhanced" settings. Kijk er even goed naar en volg het advies op de <a href="https://support.strava.com/hc/en-us/articles/216918777-Privacy-Settings">website van Strava Support</a>.</p>
 
         <div className="questions">
-          <h2>Vragen</h2>
+          <h2>Inzichtvragen</h2>
           <ul>
             {questions.map((question, i) => (
               <li key={i}>

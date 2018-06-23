@@ -79,7 +79,7 @@ class Rights extends React.Component<IProps> {
         <p><a href="https://autoriteitpersoonsgegevens.nl/nl/zelf-doen/voorbeeldbrieven">Compleet overzicht voorbeeldbrieven</a></p>
 
         <div className="questions">
-          <h2>Vragen</h2>
+          <h2>Inzichtvragen</h2>
           <ul>
             {questions.map((question, i) => (
               <li key={i}>

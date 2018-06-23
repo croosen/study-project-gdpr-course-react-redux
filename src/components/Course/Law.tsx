@@ -74,7 +74,7 @@ class Law extends React.Component<IProps> {
         <p>Je kunt bezwaar maken tegen ‘profilering’, ofwel dat bedrijven een gedetailleerd profiel van je aanmaken. Deze profielen zijn waardevol voor adverteerders.</p>
 
         <div className="questions">
-          <h2>Vragen</h2>
+          <h2>Inzichtvragen</h2>
           <ul>
             {questions.map((question, i) => (
               <li key={i}>
