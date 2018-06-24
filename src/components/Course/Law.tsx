@@ -43,7 +43,7 @@ class Law extends React.Component<IProps> {
         <p className="font-large">Sinds 25 mei 2018 is de Algemene verordening gegevensbescherming (AVG) van toepassing. Dat betekent dat er vanaf die datum dezelfde privacywetgeving geldt in de hele Europese Unie (EU). De Wet bescherming persoonsgegevens (Wbp) geldt niet meer.</p>
 
         <h2>Wbp, AVG en GDPR</h2>
-        <p>De AVG zal de huidige wet bescherming persoonsgegevens (Wbp) gaan vervangen. Er zitten nogal wat verschillen tussen de Wbp en de AVG, waarvan één de boetebepaling is. De nieuwe boetes zijn namelijk veel hoger: maximaal 4 procent van de wereldwijde jaaromzet of maximaal 20 miljoen euro. Deze boetes kunnen in Nederland worden opgelegd door de Autoriteit Persoonsgegevens.</p>
+        <p>De AVG vervangt de oude Wet bescherming persoonsgegevens (Wbp). Er zitten nogal wat verschillen tussen de Wbp en de AVG, waarvan één de boetebepaling is. De nieuwe boetes zijn namelijk veel hoger: maximaal 4 procent van de wereldwijde jaaromzet of maximaal 20 miljoen euro. Deze boetes kunnen in Nederland worden opgelegd door de Autoriteit Persoonsgegevens.</p>
 
         <p>Door de invoering van de AVG krijgen mensen van wie de persoonsgegevens worden verwerkt meer en verder aangescherpte privacy rechten. Aan het recht op inzage en het recht op correctie en verwijdering wordt bijvoorbeeld meer belang gehecht als voorheen binnen de Wbp. Ook komen er nieuwe rechten bij. De dataportabiliteit vereist bijvoorbeeld dat de gegevens gemakkelijk verkregen moeten kunnen worden in een formaat welke ook eenvoudig aan andere partijen kan worden doorgegeven. Hiermee wordt een vaker toegepaste opgeworpen drempel weggenomen.</p>
 

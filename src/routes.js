@@ -1,10 +1,13 @@
 import * as React from 'react';
 
-import { HashRouter, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
-import createHistory from 'history/createBrowserHistory'
+import createHashHistory from 'history/createHashHistory';
 
-const history = createHistory()
+const hashHistory = createHashHistory({ basename: process.env.PUBLIC_URL });
+
+// import createHistory from 'history/createBrowserHistory'
+// const history = createHistory()
 
 import App from './App'
 import Pii from './components/Course/Pii'
@@ -22,19 +25,19 @@ import Results from './components/Course/Results'
 
 export default () => {
   return (
-     <HashRouter history={history} basename={process.env.PUBLIC_URL}>
+     <BrowserRouter history={hashHistory} basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path={process.env.PUBLIC_URL + '/'} component={App}/>
-        <Route path={process.env.PUBLIC_URL + '/course/privacy'} component={Privacy}/>
-        <Route path={process.env.PUBLIC_URL + '/course/pii'} component={Pii}/>
-        <Route path={process.env.PUBLIC_URL + '/course/law'} component={Law}/>
-        <Route path={process.env.PUBLIC_URL + '/course/rights'} component={Rights}/>
-        <Route path={process.env.PUBLIC_URL + '/course/risks'} component={Risks}/>
-        <Route path={process.env.PUBLIC_URL + '/course/case-facebook'} component={CaseFacebook}/>
-        <Route path={process.env.PUBLIC_URL + '/course/case-tinder-grindr'} component={CaseTinderGrindr}/>
-        <Route path={process.env.PUBLIC_URL + '/course/case-strava'} component={CaseStrava}/>
-        <Route path={process.env.PUBLIC_URL + '/course/results'} component={Results}/>
+        <Route exact path={process.env.PUBLIC_URL + '/course/privacy'} component={Privacy}/>
+        <Route exact path={process.env.PUBLIC_URL + '/course/pii'} component={Pii}/>
+        <Route exact path={process.env.PUBLIC_URL + '/course/law'} component={Law}/>
+        <Route exact path={process.env.PUBLIC_URL + '/course/rights'} component={Rights}/>
+        <Route exact path={process.env.PUBLIC_URL + '/course/risks'} component={Risks}/>
+        <Route exact path={process.env.PUBLIC_URL + '/course/case-facebook'} component={CaseFacebook}/>
+        <Route exact path={process.env.PUBLIC_URL + '/course/case-tinder-grindr'} component={CaseTinderGrindr}/>
+        <Route exact path={process.env.PUBLIC_URL + '/course/case-strava'} component={CaseStrava}/>
+        <Route exact path={process.env.PUBLIC_URL + '/course/results'} component={Results}/>
       </Switch>
-     </HashRouter>
+     </BrowserRouter>
   )
 }

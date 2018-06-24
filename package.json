@@ -2,7 +2,7 @@
   "name": "struisvogel",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://croosen.github.io/study-project-gdpr-course-react-redux/",
+  "homepage": "http://corinneroosen.nl/struisvogel",
   "dependencies": {
     "@types/react-redux": "^5.0.14",
     "@types/react-router": "^4.0.26",
