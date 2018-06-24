@@ -122,8 +122,8 @@ class CaseTinderGrindr extends React.Component<IProps> {
         </div>
 
         <div className="navigator">
-          <Link to={process.env.PUBLIC_URL + '/course/case-facebook'} className="navigator_button button-prev">Case: Facebook, intieme gegevens van drie miljoen mensen op straat</Link>
-          <Link to={process.env.PUBLIC_URL + '/course/case-strava'} className="navigator_button button-next">Case: Strava bracht geheime militaire basis aan het licht</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/case-facebook'} className="navigator_button button-prev"><i className="fa fa-angle-left" /> Case: Facebook, intieme gegevens van drie miljoen mensen op straat</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/case-strava'} className="navigator_button button-next">Case: Strava bracht geheime militaire basis aan het licht <i className="fa fa-angle-right" /></Link>
         </div>
       </Frame>
     )

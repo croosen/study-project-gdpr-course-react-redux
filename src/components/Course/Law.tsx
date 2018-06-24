@@ -91,8 +91,8 @@ class Law extends React.Component<IProps> {
         </div>
 
         <div className="navigator">
-          <Link to={process.env.PUBLIC_URL + '/course/pii'} className="navigator_button button-prev">Jouw persoonsgegevens</Link>
-          <Link to={process.env.PUBLIC_URL + '/course/rights'} className="navigator_button button-next">Jouw rechten</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/pii'} className="navigator_button button-prev"><i className="fa fa-angle-left" /> Jouw persoonsgegevens</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/rights'} className="navigator_button button-next">Jouw rechten <i className="fa fa-angle-right" /></Link>
         </div>
       </Frame>
     )

@@ -110,8 +110,8 @@ class CaseStrava extends React.Component<IProps> {
         </div>
 
         <div className="navigator">
-          <Link to={process.env.PUBLIC_URL + '/course/case-tinder-grindr'} className="navigator_button button-prev">Case: Tinder en Grindr</Link>
-          <Link to={process.env.PUBLIC_URL + '/course/results'} className="navigator_button button-next">Ontdek of jij een Struisvogel bent!</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/case-tinder-grindr'} className="navigator_button button-prev"><i className="fa fa-angle-left" /> Case: Tinder en Grindr</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/results'} className="navigator_button button-next">Ontdek of jij een Struisvogel bent! <i className="fa fa-angle-right" /></Link>
         </div>
       </Frame>
     )

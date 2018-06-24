@@ -91,8 +91,8 @@ class Privacy extends React.Component<IProps> {
         </div>
 
         <div className="navigator">
-          <Link to={process.env.PUBLIC_URL + '/'} className="navigator_button button-prev">Startpagina</Link>
-          <Link to={process.env.PUBLIC_URL + '/course/pii'} className="navigator_button button-next">Jouw persoonsgegevens</Link>
+          <Link to={process.env.PUBLIC_URL + '/'} className="navigator_button button-prev"><i className="fa fa-angle-left" /> Startpagina</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/pii'} className="navigator_button button-next">Jouw persoonsgegevens <i className="fa fa-angle-right" /></Link>
         </div>
       </Frame>
     )

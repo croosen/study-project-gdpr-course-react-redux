@@ -121,8 +121,8 @@ class CaseFacebook extends React.Component<IProps> {
         </div>
 
         <div className="navigator">
-          <Link to={process.env.PUBLIC_URL + '/course/risks'} className="navigator_button button-prev">Jouw gegevens op straat, het risico van identiteitsfraude</Link>
-          <Link to={process.env.PUBLIC_URL + '/course/case-tinder-grindr'} className="navigator_button button-next">Case: Tinder en Grindr</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/risks'} className="navigator_button button-prev"><i className="fa fa-angle-left" /> Jouw gegevens op straat, het risico van identiteitsfraude</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/case-tinder-grindr'} className="navigator_button button-next">Case: Tinder en Grindr <i className="fa fa-angle-right" /></Link>
         </div>
       </Frame>
     )

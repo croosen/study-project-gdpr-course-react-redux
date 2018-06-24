@@ -96,8 +96,8 @@ class Rights extends React.Component<IProps> {
         </div>
 
         <div className="navigator">
-          <Link to={process.env.PUBLIC_URL + '/course/law'} className="navigator_button button-prev">Jouw privacy en de nieuwe wetgeving</Link>
-          <Link to={process.env.PUBLIC_URL + '/course/risks'} className="navigator_button button-next">Jouw gegevens op straat, het risico van identiteitsfraude</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/law'} className="navigator_button button-prev"><i className="fa fa-angle-left" /> Jouw privacy en de nieuwe wetgeving</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/risks'} className="navigator_button button-next">Jouw gegevens op straat, het risico van identiteitsfraude <i className="fa fa-angle-right" /></Link>
         </div>
       </Frame>
     )

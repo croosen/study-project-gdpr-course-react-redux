@@ -133,8 +133,8 @@ class Pii extends React.Component<IProps> {
         </div>
 
         <div className="navigator">
-          <Link to={process.env.PUBLIC_URL + '/course/privacy'} className="navigator_button button-prev">Hoeveel waarde hecht jij aan je privacy?</Link>
-          <Link to={process.env.PUBLIC_URL + '/course/law'} className="navigator_button button-next">Jouw privacy en de nieuwe wetgeving</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/privacy'} className="navigator_button button-prev"><i className="fa fa-angle-left" /> Hoeveel waarde hecht jij aan je privacy?</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/law'} className="navigator_button button-next">Jouw privacy en de nieuwe wetgeving <i className="fa fa-angle-right" /></Link>
         </div>
       </Frame>
     )

@@ -110,8 +110,8 @@ class Risks extends React.Component<IProps> {
         </div>
 
         <div className="navigator">
-          <Link to={process.env.PUBLIC_URL + '/course/rights'} className="navigator_button button-prev">Jouw rechten</Link>
-          <Link to={process.env.PUBLIC_URL + '/course/case-facebook'} className="navigator_button button-next">Case: Facebook, intieme gegevens van drie miljoen mensen op straat</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/rights'} className="navigator_button button-prev"><i className="fa fa-angle-left" /> Jouw rechten</Link>
+          <Link to={process.env.PUBLIC_URL + '/course/case-facebook'} className="navigator_button button-next">Case: Facebook, intieme gegevens van drie miljoen mensen op straat <i className="fa fa-angle-right" /></Link>
         </div>
       </Frame>
     )

@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://use.fontawesome.com/releases/v5.1.0/css/all.css');
 
 * {
     box-sizing: border-box;
@@ -35,6 +36,30 @@ p:not(.intro) {
 
 a, a:focus, a:visited {
     color: #000;
+}
+
+.navigator_button {
+  position: relative;
+}
+
+.navigator_button .fa {
+  font-size: 1.9rem;
+}
+
+.navigator_button.button-next .fa {
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  display: inline-block;
+  height: 100%;
+}
+
+.navigator_button.button-prev .fa {
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  display: inline-block;
+  height: 100%;
 }
 
 .frame {
@@ -261,6 +286,14 @@ input[type=text] {
     max-width: 100%;
     margin-bottom: 1rem;
   }
+}
+
+.navigator_button.button-prev {
+  padding-left: 40px;
+}
+
+.navigator_button.button-next {
+  padding-right: 40px;
 }
 
 /* .button-prev {

@@ -118,7 +118,7 @@ class Results extends React.Component<IProps> {
         </div>
 
         <div className="navigator">
-          <Link to={process.env.PUBLIC_URL + '/'} className="navigator_button button-prev">Terug naar de startpagina</Link>
+          <Link to={process.env.PUBLIC_URL + '/'} className="navigator_button button-prev"><i className="fa fa-angle-left" /> Terug naar de startpagina</Link>
         </div>
       </Frame>
     )
