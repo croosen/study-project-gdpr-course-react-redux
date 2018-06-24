@@ -8,6 +8,8 @@ import { Frame } from './Frame'
 
 import { store } from './store'
 
+import header from './assets/header.jpg'
+
 interface IState {
   username: string
   history?: any
@@ -26,6 +28,10 @@ class App extends React.Component<IState> {
         <div className="introduction">
 
           <h1>Ben jij een struisvogel?</h1>
+
+          <div className="image">
+            <img src={header} alt="" />
+          </div>
 
           <p className="intro font-large">Ben jij ook een struisvogel? Iemand die online overal hetzelfde wachtwoord gebruikt, kopietjes ID via mail verstuurt, of gewoon accountinformatie in Evernote plakt? Je weet heel goed dat dit niet de meest veilige handelingen zijn. En toch doe je het. Omdat het makkelijk is, of omdat je denkt “het zal wel goed komen”.</p>
 

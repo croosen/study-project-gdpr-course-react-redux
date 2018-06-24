@@ -22,6 +22,7 @@ export const createQuestion = (id: string, question: string, answers: any, corre
  * @question: string
  * @answers: list
  * @correctAnswer: number (key of answerslist, starting at 0)
+ * 12 questions in total
  */
 export const QuestionsPrivacy = [
   createQuestion(
@@ -144,34 +145,43 @@ export const QuestionsCaseTinderGrindr = [
 export const QuestionsLaw = [
   createQuestion(
     "law_01",
-    "Law vraag 1",
-    ["Antwoord 1", "Antwoord 2", "Antwoord 3"],
-    2,
-    "nnhnghnghn"
-  ),
-  createQuestion(
-    "law_02",
-    "Law vraag 2",
-    ["Antwoord 1a", "Antwoord 1b"],
-    0,
-    "wwdwwewec"
+    "Nu je weet dat je je gegevens kunt laten verwijderen, ga je gebruik maken van dat recht?",
+    [
+      "Nee, ik zou ook niet eens weten hoe ik dat moet doen",
+      "Ik zou zeker uitzoeken welke bedrijven gegevens van mij hebben en indien nodig een verzoek indienen",
+      "Dat weet ik nog niet, ik doe daar pas iets mee op het moment dat het nodig is"
+    ],
+    1,
+    "Je hebt het recht op vergetelheid. Dat betekent dat jij jouw gegevens kunt laten verwijderen wanneer je niet langer wilt dat jouw gegevens bij een bepaald bedrijf staan opgeslagen. Dit kan natuurlijk niet wanneer een bedrijf jouw gegevens nog nodig heeft, zoals je energieleverancier. Het is wel heel handig om marketeers of recruiters van je af te houden. Of doe je een keer mee aan een win actie, maar heb je spijt dat je je naam en email adres hebt gegeven? Ook dan kun je jezelf laten verwijderen."
   )
 ]
 
 export const QuestionsRights = [
   createQuestion(
     "rights_01",
-    "Rights vraag 1",
-    ["Antwoord 1", "Antwoord 2", "Antwoord 3"],
+    "De sportschool waar je altijd komt, vraagt je om een vingerafdruk, zodat ze jouw sportresultaten kunnen opslaan in een speciale sleutel die aan de sportapparaten is gekoppeld. Zonder deze sleutel, kun je je resultaten niet bijhouden. Wat doe jij?",
+    [
+      "Ik geef gewoon mijn afdruk, ik wil graag mijn resultaten bijhouden",
+      "Ik geef mijn afdruk, maar vraag wel hoe deze wordt opgeslagen",
+      "Ik doe dit niet, ik houd mijn resultaten wel op een andere manier bij",
+      "Ik ga opzoek naar een andere sportschool, eentje zonder rare vingerafdrulsleutel"
+    ],
     2,
-    "jhjhjhjhjh"
-  ),
+    "Sportscholen, discotheken, je mobiele telefoon... steeds meer bedrijven en apparaten maken gebruik van je vingerafdruk voor registratie of toegang. Wees jezelf ervan bewust dat naast DNA, je vingerafdruk het meest unieke persoonsgegeven is dat je bezit. In de verkeerde handen, kun je zelfs in de gevangenis belanden. Dat klinkt misschien overdreven, als iets uit de film, maar niets is minder waar. Lees maar eens meer in <a href=\"http://blogs.kentlaw.iit.edu/islat/2017/04/11/risks-fingerprint-scanning/\">dit onderzoek.</a>"
+  )
+]
+
+export const QuestionsRisks = [
   createQuestion(
-    "rights_02",
-    "Rights vraag 2",
-    ["Antwoord 1a", "Antwoord 1b"],
-    0,
-    "jjdjdjdj"
+    "risks_01",
+    "Je wilt via Marktplaats een camera verkopen. Een koper neemt contact met je op, vertelt je dat hij graag een kopietje van je bankpas wil hebben, dan stuurt hij zelf ook een kopietje, zodat hij zeker weet dat hij niet opgelicht wordt. Wat doe jij?",
+    [
+      "Ik doe niets, ik negeer deze koper en ik stuur niemand een kopie van mijn bankpas",
+      "Ik stuur wel een kopietje, met alleen een kopietje kan niemand immers iets doen",
+      "Ik stuur geen kopietje en maak een melding bij Marktplaats van poging tot oplichting"
+    ],
+    2,
+    "Pas op bij online kopen en verkopen. Oplichters zijn vaak niet geinteresseerd in de spullen, wel in je ID en bankpasje. Wist je dat je met een kopietje van je bankpas en je ID een creditcard kunt aanvragen? Oplichters doen dit binnen no-time zonder dat jij het door hebt. Tegen de tijd dat de deurwaarder voor je deur staat kom je er pas achter. Maar dan is het te laat, want \"jij\" hebt immers de creditcard aangevraagd. Lees ook <a href=\"https://vrouw.nl/artikel/verhalen-achter-het-nieuws/44667/christine-op-internet-sta-ik-bekend-als-oplichter\">dit stukje</a> maar eens, dan zie je hoe makkelijk dat gaat."
   )
 ]
 
@@ -182,3 +192,4 @@ export const allQuestions = QuestionsPrivacy
     .concat(QuestionsCaseTinderGrindr)
     .concat(QuestionsLaw)
     .concat(QuestionsRights)
+    .concat(QuestionsRisks)

@@ -10,7 +10,7 @@ import { setAnswer } from '../../store/session'
 
 import { store } from '../../store'
 
-import { QuestionsRights as questions } from '../../questions/questions'
+import { QuestionsRisks as questions } from '../../questions/questions'
 
 interface IStateProps {
   course?: any
@@ -90,7 +90,7 @@ class Risks extends React.Component<IProps> {
         <p>Een database met zeer persoonlijke gegevens van meer dan drie miljoen Facebook-gebruikers was vier jaar lang voor iedereen toegankelijk. De gegevens zijn afkomstig van een persoonlijkheidstest op Facebook, <a href="https://www.engadget.com/2018/05/14/researchers-may-have-exposed-facebook-quiz-data-on-3-million-use/?guccounter=1">aldus New Scientist</a>. Hierbij moesten gebruikers psychologische vragen beantwoorden.</p>
 
         <h2>Is jouw email adres gelekt?</h2>
-        <p><a href="https://haveibeenpwned.com/">HaveIBeenPwned.com</a> is een website om te controleren of je email adres is buitgemaakt door hacks of datalekken.</p>
+        <p><a href="https://haveibeenpwned.com/">HaveIBeenPwned.com</a> is een website om te controleren of je email adres is buitgemaakt door hacks of datalekken. Is dit het geval, pas dan zo snel mogelijk je wachtwoorden aan.</p>
 
         <div className="questions">
           <h2>Inzichtvragen</h2>

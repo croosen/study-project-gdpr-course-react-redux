@@ -53,7 +53,7 @@ class Law extends React.Component<IProps> {
         <p>Hierdoor krijg je meer mogelijkheden om voor jezelf op te komen bij de verwerking van je gegevens. Jouw privacyrechten worden namelijk versterkt en uitgebreid.</p>
 
         <h3>Meer soorten gegevens zijn persoonsgegevens</h3>
-        <p>Meer verschillende soorten gegevens vallen vanaf eind mei onder de norm persoonsgegevens. Daardoor vallen deze ook onder de beschermingsregels die bedrijven moeten naleven. Voorbeelden zijn IP-adressen (unieke nummers die apparaten krijgen zodra ze verbonden zijn met internet) en cookies. Via een IP-adres kunnen organisaties (bijvoorbeeld Facebook en Google) een schat aan privacygevoelige gegevens vergaren, zoals hoe vaak en wanneer je de site bezoekt.</p>
+        <p>Meer verschillende soorten gegevens vallen vanaf eind mei onder de norm <a href="https://autoriteitpersoonsgegevens.nl/nl/over-privacy/persoonsgegevens/wat-zijn-persoonsgegevens">persoonsgegevens</a>. Daardoor vallen deze ook onder de beschermingsregels die bedrijven moeten naleven. Voorbeelden zijn IP-adressen (unieke nummers die apparaten krijgen zodra ze verbonden zijn met internet) en cookies. Via een IP-adres kunnen organisaties (bijvoorbeeld Facebook en Google) een schat aan privacygevoelige gegevens vergaren, zoals hoe vaak en wanneer je de site bezoekt.</p>
 
         <h3>Aantoonbare toestemming</h3>
         <p>Bedrijven mogen persoonsgegevens verwerken met je toestemming, maar ze moeten wel kunnen aantonen dat ze die ook echt gekregen hebben. Simpelweg noteren dat jij toestemming hebt gegeven is dus onvoldoende.</p>
