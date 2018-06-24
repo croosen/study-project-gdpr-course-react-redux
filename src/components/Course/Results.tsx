@@ -2,9 +2,11 @@ import * as React from 'react';
 
 import { connect } from 'react-redux';
 
+import { endSession } from '../../store/session'
+
 import { Frame } from '../../Frame'
 
-import { Link } from 'react-router-dom'
+import { store } from '../../store'
 
 import struis01 from '../../assets/results/struis-01.jpg'
 
@@ -14,6 +16,7 @@ interface IStateProps {
   course?: any
   submissions: any
   username?: string
+  history?: any
 }
 
 interface IOwnState {
@@ -84,7 +87,7 @@ class Results extends React.Component<IProps> {
 
           {(score > 9) &&
               <div>
-                <h2>Je scoort een 9:</h2>
+                <h2>Je scoort een 9+:</h2>
                 <p>Gefeliciteerd! Jij bent geen Struisvogel. Probeer toch altijd alert en kritisch te blijven!</p>
               </div>
           }
@@ -118,10 +121,15 @@ class Results extends React.Component<IProps> {
         </div>
 
         <div className="navigator">
-          <Link to={process.env.PUBLIC_URL + '/'} className="navigator_button button-prev"><i className="fa fa-angle-left" /> Terug naar de startpagina</Link>
+          <a className="navigator_button button-prev" onClick={this.handleReset}><i className="fa fa-angle-left" /> Terug naar de startpagina</a>
         </div>
       </Frame>
     )
+  }
+
+  public handleReset = () : void => {
+    Promise.resolve(store.dispatch(endSession()))
+    .then(() => this.props.history.push(process.env.PUBLIC_URL + '/'))
   }
 }
 

@@ -2,9 +2,9 @@ import * as React from 'react';
 
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
-import createHashHistory from 'history/createHashHistory';
-
-const hashHistory = createHashHistory({ basename: process.env.PUBLIC_URL });
+// import createHashHistory from 'history/createHashHistory';
+//
+// const hashHistory = createHashHistory({ basename: process.env.PUBLIC_URL });
 
 // import createHistory from 'history/createBrowserHistory'
 // const history = createHistory()
@@ -25,7 +25,7 @@ import Results from './components/Course/Results'
 
 export default () => {
   return (
-     <BrowserRouter history={hashHistory} basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <Switch>
         <Route exact path={process.env.PUBLIC_URL + '/'} component={App}/>
         <Route exact path={process.env.PUBLIC_URL + '/course/privacy'} component={Privacy}/>
@@ -38,6 +38,6 @@ export default () => {
         <Route exact path={process.env.PUBLIC_URL + '/course/case-strava'} component={CaseStrava}/>
         <Route exact path={process.env.PUBLIC_URL + '/course/results'} component={Results}/>
       </Switch>
-     </BrowserRouter>
+    </BrowserRouter>
   )
 }
