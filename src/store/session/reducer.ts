@@ -4,7 +4,7 @@ export interface IState {
 }
 
 const initialState: IState = {
-  courseSubmissions: {rights_01: 0, rights_02: 1, casefb_01: 1, casefb_02: 0, pii_01: 0, pii_02: 2},
+  courseSubmissions: {casestr_01: 1, rights_01: 2, rights_02: 1, casefb_01: 1, casefb_02: 0, pii_01: 0, pii_02: 2, casetdrgr_01: 1},
   username: '',
 }
 

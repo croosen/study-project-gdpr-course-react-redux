@@ -254,3 +254,30 @@ input[type=text] {
 .button-next {
     float: right;
 }
+
+.score p {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.score_titel h2 {
+  line-height: 3rem;
+  display: inline-block;
+  width: auto;
+  margin-top: 0;
+}
+
+.score_count {
+  font-family: 'Lobster', cursive;
+  color: #679795;
+  font-size: 3rem;
+  display: inline-block;
+  padding: 0 0 0 30px;
+  position: relative;
+  line-height: 3rem;
+  float: right;
+}
+
+.advice_content {
+  margin-bottom: 2rem;
+}

@@ -6,13 +6,13 @@ import { Frame } from '../../Frame'
 
 import { Link } from 'react-router-dom'
 
-// import { store } from '../../store'
+import struis01 from '../../assets/results/struis-01.jpg'
 
 import { allQuestions as questions } from '../../questions/questions'
 
 interface IStateProps {
   course?: any
-  submission: any
+  submissions: any
   username?: string
 }
 
@@ -33,25 +33,18 @@ class Results extends React.Component<IProps> {
   }
 
   public componentWillMount() {
-    const { submission } = this.props
-    global.console.log(submission.casefb_01)
-    global.console.log(questions)
+    const { submissions } = this.props
 
-    // TODO work in progress
-    // check on correct answers and put in state
-    // output list with question + result
+    const arr = Array()
     questions.map((question: any) => {
-      if (question.id === submission[question.id]) {
-
-        global.console.log(submission.key)
-        global.console.log('vvv')
-
-        if (question.correctAnswer === submission) {
-          this.setState({
-            listResults: this.state.listResults.concat([question.id])
-          })
+      Object.keys(submissions).forEach((key) => {
+        if (question.id === key && question.correctAnswer === submissions[key]) {
+          arr.push([question.id, question.advice])
         }
-      }
+      });
+    })
+    this.setState({
+      listResults: arr
     })
   }
 
@@ -60,16 +53,52 @@ class Results extends React.Component<IProps> {
 
     return (
       <Frame>
-        <h1>Resultaten</h1>
-        Je krijgt nu een sticker
+        <h1>Jouw Struisvogel score</h1>
 
-        {
-          results.map((r: any, key: any) => {
-            return (<div key={key}>Result {r}</div>)
-          })
-        }
+        <div className="image">
+          <img src={struis01} alt="" />
+        </div>
 
-        { results }
+        <div className="score">
+          {(results.length <= 2) &&
+              <div>
+                <h2>Je scoort een 3:</h2>
+                <p>Je steekt je kop nog te vaak in het zand, wees geen Struisvogel en steek je kop wat vaker omhoog</p>
+              </div>
+          }
+
+          {(results.length > 2 && results.length <= 5) &&
+              <div>
+                <h2>Je scoort een 5:</h2>
+                <p>Je hebt nog regelmatig je kop in het zand, maar kijkt ook af en toe wat er boven het zand gebeurt</p>
+              </div>
+          }
+
+          {(results.length > 6 && results.length <= 8) &&
+              <div>
+                <h2>Je scoort een 7:</h2>
+                <p>Jouw kop bevindt zich vaker boven het zand dan in het zand, probeer nog vaker je kop uit het zand te houden</p>
+              </div>
+          }
+
+          {(results.length > 9) &&
+              <div>
+                <h2>Je scoort een 9:</h2>
+                <p>Gefeliciteerd! Jij bent geen Struisvogel! Probeer toch altijd alert en kritisch te blijven</p>
+              </div>
+          }
+        </div>
+
+        <div className="advice">
+          <h3>Jouw advies</h3>
+          {
+            results.map((r: any, key: any) => {
+              return (
+                <div className="advice_content" key={key}>{r[1]}</div>
+              )
+            })
+          }
+        </div>
 
         <div className="navigator">
           <Link to={process.env.PUBLIC_URL + '/course/case-strava'} className="navigator_button button-prev">Prev</Link>
@@ -82,7 +111,7 @@ class Results extends React.Component<IProps> {
 function mapStateToProps(state: any, ownProps: any): IStateProps {
   return {
     course: state.course.course,
-    submission: state.session.courseSubmissions,
+    submissions: state.session.courseSubmissions,
     username: state.session.username,
   }
 }

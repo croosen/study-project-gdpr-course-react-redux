@@ -22,7 +22,7 @@ export class Frame extends React.Component<IStateProps> {
     return (
       <div className="frame">
         <div className="headerbar">
-          <span className="logo">{username ? 'Hey ' + username + ', ben jij een Struisvogel?' : 'Ben jij een Struisvogel?'}</span>
+          <a href="/" className="logo">{username ? 'Hey ' + username + ', ben jij een Struisvogel?' : 'Ben jij een Struisvogel?'}</a>
         </div>
         <div className="frame_container">
           {children}
