@@ -112,8 +112,13 @@ class Results extends React.Component<IProps> {
           </div>
         }
 
+        <div className="sources">
+          <h3>Hulp bij privacy</h3>
+          <p>Wil je meer lezen en weten over privacy, persoonsgegevens, de nieuwe AVG en wat jij kunt doen om je privacy te beschermen? Op <a href="https://hulpbijprivacy.nl/">https://hulpbijprivacy.nl/</a> vind je meer informatie.</p>
+        </div>
+
         <div className="navigator">
-          <Link to={process.env.PUBLIC_URL + '/course/case-strava'} className="navigator_button button-prev">Prev</Link>
+          <Link to={process.env.PUBLIC_URL + '/'} className="navigator_button button-prev">Terug naar de startpagina</Link>
         </div>
       </Frame>
     )
